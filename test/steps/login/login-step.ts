@@ -9,10 +9,10 @@ When('I click masuk sekarang', async () => {
     loginPage.masukSekarang.click()
 })
 
-When('I input username {string}', async (s: string) => {
+When('I input username {string}', async (username: string) => {
     await loginPage.username.isDisplayed()
     await loginPage.username.click()
-    await loginPage.username.setValue(s)
+    await loginPage.username.setValue(username)
 })
 
 When('I input password {string}', async (s: string) => {
